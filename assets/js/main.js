@@ -1,6 +1,7 @@
 
 const click = document.querySelector("#menu")
 let checked = document.querySelector(".close-menu").checked = true;
+const body = document.querySelector("body")
 function openMenu (){
     let menuLateral = document.querySelector(".container-left");
     
@@ -13,7 +14,7 @@ function openMenu (){
         click.replaceChildren("☰")
         click.style.backgroundColor=""
         click.style.border=""
-
+        body.style.overflowY=""
         
         
        
@@ -31,6 +32,7 @@ function openMenu (){
         click.style.justifyContent="center"
         menuLateral.style.display ='';
         menuLateral.style.transition=" 5s linear;"
+        body.style.overflowY="hidden"
      } 
     
 }
