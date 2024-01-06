@@ -47,7 +47,7 @@ function global () {
             });
 
             setTimeout(()=> {
-                location.href="index.html"
+                location.href="login.html"
             },5000)
             
             
